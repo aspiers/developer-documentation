@@ -264,8 +264,9 @@ This is not yet a comprehensive list of all database tables.  Contributions are 
 - `lead_tags`: tags
 - `lead_tags_xrefs`: associations of tags with contacts
 - `migrations`: tracks which [database migrations](https://github.com/mautic/mautic/tree/staging/app/migrations) have been applied
+- `page_hits`: tracks click-throughs
 
-#### ORM Arrays and DateTime 
+#### ORM Arrays and DateTime
 
 When using ORM, Mautic will automatically convert DateTime properties to UTC and to the system/user's profile timezone on retrieval.  However, if using DBAL, DateTime strings must be converted to UTC before persisting and to the local timezone on retrieval.  See [Date/Time Helper](#date/time-helper) to assist with conversions.
 
